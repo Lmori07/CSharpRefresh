@@ -1,31 +1,24 @@
 using Microsoft.Playwright;
+using Microsoft.Playwright.NUnit;
 
 namespace CSharpRefresh;
 
-public class Tests
+public class Tests : PageTest
 {
     [SetUp]
-    public void Setup()
+    public async Task Setup()
     {
+        await Page.GotoAsync("http://www.eaapp.somee.com/");
     }
 
     [Test]
     public async Task basicsULROpenning()
     {
-        //Playwright
-        using var playwright = await Playwright.CreateAsync();
-        //Browser
-        await using var browser = await playwright.Chromium.LaunchAsync(new BrowserTypeLaunchOptions
-        {
-            Headless = false
-        });
-        //Page
-        var page = await browser.NewPageAsync();
-        await page.GotoAsync("http://www.eaapp.somee.com/");
-        await page.ClickAsync("text='Login'");
-        await page.ScreenshotAsync(new PageScreenshotOptions 
-        {
-            Path = "EAAPP.jpg"
-        });
+        await Page.ClickAsync("text='Login'");
+
+        await Page.FillAsync("#UserName", "admin");
+        await Page.FillAsync("#Password", "password");
+        await Page.ClickAsync("text= Log in");
+        await Expect(Page.Locator("text='Employee Details'")).ToBeVisibleAsync();
     }
 }
