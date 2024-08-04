@@ -12,13 +12,24 @@ public class Tests : PageTest
     }
 
     [Test]
-    public async Task basicsULROpenning()
+    public async Task BasicsULROpening()
     {
-        await Page.ClickAsync("text='Login'");
+        /*
+        To run it headed mode use the following command:
+        $env:HEADED="1"
+        dotnet test
+        */
 
-        await Page.FillAsync("#UserName", "admin");
-        await Page.FillAsync("#Password", "password");
-        await Page.ClickAsync("text= Log in");
+        #region Locators
+        var usernameTextBox = Page.Locator("#UserName");
+        var passwordTextBox = Page.Locator("#Password");
+        var loginButton = Page.Locator("input", new PageLocatorOptions {HasTextString = "Log in"}); //In here we are setting the locator to identify an input with a value string of "Log in"
+        #endregion
+        
+        await Page.ClickAsync("text='Login'");
+        await usernameTextBox.FillAsync("admin");
+        await passwordTextBox.FillAsync("password");
+        await loginButton.ClickAsync();
         await Expect(Page.Locator("text='Employee Details'")).ToBeVisibleAsync();
     }
 }

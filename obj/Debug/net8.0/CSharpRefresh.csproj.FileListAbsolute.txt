@@ -404,3 +404,4 @@ C:\Users\joseo\OneDrive\Documents\csharprefresh\CSharpRefresh\bin\Debug\net8.0\M
 C:\Users\joseo\OneDrive\Documents\csharprefresh\CSharpRefresh\bin\Debug\net8.0\Microsoft.Playwright.NUnit.dll
 C:\Users\joseo\OneDrive\Documents\csharprefresh\CSharpRefresh\bin\Debug\net8.0\Microsoft.Playwright.TestAdapter.dll
 C:\Users\joseo\OneDrive\Documents\csharprefresh\CSharpRefresh\bin\Debug\net8.0\nunit.framework.legacy.dll
+c:\Users\joseo\OneDrive\Documents\csharprefresh\CSharpRefresh\obj\Debug\net8.0\CSharpRefresh.sourcelink.json
