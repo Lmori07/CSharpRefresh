@@ -1,5 +1,7 @@
+using CSharpRefresh.Pages;
 using Microsoft.Playwright;
 using Microsoft.Playwright.NUnit;
+
 
 namespace CSharpRefresh;
 
@@ -31,5 +33,22 @@ public class Tests : PageTest
         await passwordTextBox.FillAsync("password");
         await loginButton.ClickAsync();
         await Expect(Page.Locator("text='Employee Details'")).ToBeVisibleAsync();
+    }
+    [Test]
+     public async Task BasicsULRWithPOM()
+    {
+        /*
+        To run it headed mode use the following command:
+        $env:HEADED="1"
+        dotnet test
+        */
+
+        /*Page is been used here to get all the dependencies from PageTest.*/
+        LoginPage loginPage = new LoginPage(Page); 
+        await loginPage.ClickLogin();
+        await loginPage.Login("admin", "password");
+        var isExist = await loginPage.IsEmployeeDetailExists();
+        Assert.That(isExist, Is.True);
+
     }
 }
