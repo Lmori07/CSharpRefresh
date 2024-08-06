@@ -42,12 +42,15 @@ public class Tests : PageTest
         $env:HEADED="1"
         dotnet test
         */
+        /*This is to use the classic POM format.*/
+        LoginPage loginPage = new LoginPage(Page);
 
-        /*Page is been used here to get all the dependencies from PageTest.*/
-        LoginPage loginPage = new LoginPage(Page); 
-        await loginPage.ClickLogin();
-        await loginPage.Login("admin", "password");
-        var isExist = await loginPage.IsEmployeeDetailExists();
+        /*This is to use the upgraded version of the POM format.*/
+        LoginPageUpgrade loginPageUpgrade = new LoginPageUpgrade(Page);
+
+        await loginPageUpgrade.ClickLogin();
+        await loginPageUpgrade.Login("admin", "password");
+        var isExist = await loginPageUpgrade.IsEmployeeDetailExists();
         Assert.That(isExist, Is.True);
 
     }

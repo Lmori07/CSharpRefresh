@@ -5,7 +5,7 @@ namespace CSharpRefresh.Pages;
 public class LoginPage{
     private IPage _page;
     //The region will contain the variable created for the locator element of the login page.
-    #region Loing Page Locators
+    #region Loing Page Locators (Intialization)
     private readonly ILocator _lnkLogin;
     private readonly ILocator _txtUsernName;
     private readonly ILocator _txtPassword;
@@ -14,6 +14,7 @@ public class LoginPage{
     #endregion
 
     //Constructor of LoginPage where all variable will get the corresponding xpath.
+    #region Setting the values of the locator elements.
     public LoginPage(IPage Page){
     _page = Page;
     _lnkLogin = _page.Locator("text=Login");
@@ -21,7 +22,8 @@ public class LoginPage{
     _txtPassword = _page.Locator("#Password");
     _btnLogin = _page.Locator("input", new PageLocatorOptions {HasTextString = "Log in"});
     _lnkEmployeeDetails = _page.Locator("text=Employee Details");
-    }   
+    }
+    #endregion   
 
     public async Task ClickLogin(){
         await _lnkLogin.ClickAsync();
