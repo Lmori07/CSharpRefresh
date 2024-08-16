@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\joseo\\OneDrive\\Documents\\csharprefresh\\CSharpRefresh\\CSharpRefresh.csproj": {}
+    "c:\\Users\\joseo\\OneDrive\\Documents\\csharprefresh\\CSharpRefresh\\CSharpRefresh.csproj": {}
   },
   "projects": {
-    "C:\\Users\\joseo\\OneDrive\\Documents\\csharprefresh\\CSharpRefresh\\CSharpRefresh.csproj": {
+    "c:\\Users\\joseo\\OneDrive\\Documents\\csharprefresh\\CSharpRefresh\\CSharpRefresh.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joseo\\OneDrive\\Documents\\csharprefresh\\CSharpRefresh\\CSharpRefresh.csproj",
+        "projectUniqueName": "c:\\Users\\joseo\\OneDrive\\Documents\\csharprefresh\\CSharpRefresh\\CSharpRefresh.csproj",
         "projectName": "CSharpRefresh",
-        "projectPath": "C:\\Users\\joseo\\OneDrive\\Documents\\csharprefresh\\CSharpRefresh\\CSharpRefresh.csproj",
+        "projectPath": "c:\\Users\\joseo\\OneDrive\\Documents\\csharprefresh\\CSharpRefresh\\CSharpRefresh.csproj",
         "packagesPath": "C:\\Users\\joseo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joseo\\OneDrive\\Documents\\csharprefresh\\CSharpRefresh\\obj\\",
+        "outputPath": "c:\\Users\\joseo\\OneDrive\\Documents\\csharprefresh\\CSharpRefresh\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\joseo\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -84,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\8.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

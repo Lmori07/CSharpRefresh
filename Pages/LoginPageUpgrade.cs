@@ -14,11 +14,14 @@ public class LoginPageUpgrade{
     private ILocator _txtPassword => _page.Locator("#Password");
     private ILocator _btnLogin => _page.Locator("input", new PageLocatorOptions {HasTextString = "Log in"});
     private ILocator _lnkEmployeeDetails => _page.Locator("text=Employee Details");
+     private ILocator _lnkEmployeeLink => _page.Locator("text=Employee Details");
     #endregion
 
     public async Task ClickLogin(){
         await _lnkLogin.ClickAsync();
     }
+
+    public async Task ClickEmployeeList() => await _lnkEmployeeLink.ClickAsync();
 
     public async Task Login(string userName, string password){
         await _txtUsernName.FillAsync(userName);
