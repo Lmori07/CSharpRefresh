@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\joseo\\OneDrive\\Documents\\csharprefresh\\CSharpRefresh\\CSharpRefresh.csproj": {}
+    "C:\\Users\\joseo\\OneDrive\\Documents\\csharprefresh\\CSharpRefresh\\CSharpRefresh.csproj": {}
   },
   "projects": {
-    "c:\\Users\\joseo\\OneDrive\\Documents\\csharprefresh\\CSharpRefresh\\CSharpRefresh.csproj": {
+    "C:\\Users\\joseo\\OneDrive\\Documents\\csharprefresh\\CSharpRefresh\\CSharpRefresh.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\joseo\\OneDrive\\Documents\\csharprefresh\\CSharpRefresh\\CSharpRefresh.csproj",
+        "projectUniqueName": "C:\\Users\\joseo\\OneDrive\\Documents\\csharprefresh\\CSharpRefresh\\CSharpRefresh.csproj",
         "projectName": "CSharpRefresh",
-        "projectPath": "c:\\Users\\joseo\\OneDrive\\Documents\\csharprefresh\\CSharpRefresh\\CSharpRefresh.csproj",
+        "projectPath": "C:\\Users\\joseo\\OneDrive\\Documents\\csharprefresh\\CSharpRefresh\\CSharpRefresh.csproj",
         "packagesPath": "C:\\Users\\joseo\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\joseo\\OneDrive\\Documents\\csharprefresh\\CSharpRefresh\\obj\\",
+        "outputPath": "C:\\Users\\joseo\\OneDrive\\Documents\\csharprefresh\\CSharpRefresh\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\joseo\\AppData\\Roaming\\NuGet\\NuGet.Config"

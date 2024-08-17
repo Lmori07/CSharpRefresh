@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZW3J8GeISfw=",
+  "dgSpecHash": "hSeORISPchk=",
   "success": true,
-  "projectFilePath": "c:\\Users\\joseo\\OneDrive\\Documents\\csharprefresh\\CSharpRefresh\\CSharpRefresh.csproj",
+  "projectFilePath": "C:\\Users\\joseo\\OneDrive\\Documents\\csharprefresh\\CSharpRefresh\\CSharpRefresh.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\joseo\\.nuget\\packages\\coverlet.collector\\6.0.2\\coverlet.collector.6.0.2.nupkg.sha512",
     "C:\\Users\\joseo\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",

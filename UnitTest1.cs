@@ -62,9 +62,6 @@ public class Tests : PageTest
         $env:HEADED="1"
         dotnet test
         */
-
-        await Page.GotoAsync("http://www.eaapp.somee.com/");
-        
         /*This is to use the classic POM format.*/
         LoginPage loginPage = new LoginPage(Page);
 
@@ -82,6 +79,42 @@ public class Tests : PageTest
 
         var isExist = await loginPageUpgrade.IsEmployeeDetailExists();
         Assert.That(isExist, Is.True);
+
+    }
+
+    [Test]
+     public async Task Flipkart()
+    {
+        /*
+        To run it headed mode use the following command:
+        $env:HEADED="1"
+        dotnet test
+        */
+        //Specifying that i want to see the browser
+        var browser = await Playwright.Chromium.LaunchAsync(new() { Headless = false });
+
+        // Create a new incognito browser context with empty cookies.
+        var context = await browser.NewContextAsync();
+
+        // Create a new page inside context.
+        var page = await context.NewPageAsync();
+
+        //We are navigating to flipkart and waiting until state is "NetworkIdle"
+        await page.GotoAsync("https://flipkart.com/", new PageGotoOptions{
+            WaitUntil = WaitUntilState.NetworkIdle
+        });
+
+        //This is because the login page opens right away and we need to close it to capture the information from the netwrok tab.
+        await page.Locator("text=x").ClickAsync();
+
+        //Here i locate an anchor element that has a Text String value of "Login" and click it
+        await page.Locator("a", new PageLocatorOptions{
+            HasTextString = "Login"
+        }).ClickAsync();
+
+        // Dispose context once it is no longer needed.
+        await context.CloseAsync();
+
 
     }
 }
