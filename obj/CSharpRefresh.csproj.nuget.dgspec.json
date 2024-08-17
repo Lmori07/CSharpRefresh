@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\joseo\\OneDrive\\Documents\\csharprefresh\\CSharpRefresh\\CSharpRefresh.csproj": {}
+    "c:\\Users\\joseo\\OneDrive\\Documents\\CSharpRefresh\\CSharpRefresh.csproj": {}
   },
   "projects": {
-    "C:\\Users\\joseo\\OneDrive\\Documents\\csharprefresh\\CSharpRefresh\\CSharpRefresh.csproj": {
+    "c:\\Users\\joseo\\OneDrive\\Documents\\CSharpRefresh\\CSharpRefresh.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joseo\\OneDrive\\Documents\\csharprefresh\\CSharpRefresh\\CSharpRefresh.csproj",
+        "projectUniqueName": "c:\\Users\\joseo\\OneDrive\\Documents\\CSharpRefresh\\CSharpRefresh.csproj",
         "projectName": "CSharpRefresh",
-        "projectPath": "C:\\Users\\joseo\\OneDrive\\Documents\\csharprefresh\\CSharpRefresh\\CSharpRefresh.csproj",
+        "projectPath": "c:\\Users\\joseo\\OneDrive\\Documents\\CSharpRefresh\\CSharpRefresh.csproj",
         "packagesPath": "C:\\Users\\joseo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joseo\\OneDrive\\Documents\\csharprefresh\\CSharpRefresh\\obj\\",
+        "outputPath": "c:\\Users\\joseo\\OneDrive\\Documents\\CSharpRefresh\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\joseo\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -43,6 +43,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[6.12.0, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.10.0, )"
@@ -84,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\8.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
